@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@font-face {
+  font-family: "ComicSansMS";
+  src: url("Fuentes/ComicSans.ttf") format("truetype");
+}
 
 body {
-    font-family: 'Comic Relief', cursive;
+    font-family: 'ComicSansMS', cursive;
     font-weight: 700;
     text-align: center;
     display: flex;
