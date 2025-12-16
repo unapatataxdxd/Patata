@@ -42,26 +42,30 @@ h3 {
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center; /* Prevent vertical shift on hover */
 }
 
-button {
+.botones button {
     font-family: 'Comic Sans MS', cursive;
     font-weight: 700;
-    font-size: 1em;
-    padding: 12px 30px;
-    background-color: #b2aa75;
-    color: #fff4a8;
+    font-size: 2em;
+    background-color: transparent; /* Changed from #b2aa75 */
+    color: #b2aa75;            /* Changed from #fff4a8 */
     border: 3px solid #fff4a8;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 120px;
-    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
-button:hover {
-    background-color: #b2aa75;
-    color: #fff4a8;
+.botones button:hover {
+    background-color: #fff4a8; /* New hover background */
+    color: #b2aa75;
     transform: scale(1.1);
 }
 
@@ -94,7 +98,7 @@ button:hover {
     transform: none;
     padding: 25px;
     color: #fff4a8;
-    border-radius: 15px;
+    border-radius: 25px; /* Increased curvature */
     width: 300px;
     text-align: center;
     animation: modalEntrada 0.4s ease;
@@ -170,10 +174,7 @@ button:hover {
     font-size: 0.9em;
 }
 
-.modal-content button {
-    background-color: #fff4a8;
-    color: #b2aa75;
-}
+
 
 .modal-header {
     display: flex;
@@ -219,20 +220,25 @@ button:hover {
 .modal-btn {
     font-family: 'Comic Sans MS', cursive;
     font-weight: 700;
-    font-size: 1em;
-    padding: 10px 20px;
-    background-color: #b2aa75;
-    color: #fff4a8;
+    font-size: 1.2em; /* Adjusted for icons and text */
+    background-color: #fff4a8; /* Match modal background */
+    color: #b2aa75;            /* Text color */
     border: 3px solid #b2aa75;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 100%; /* Make buttons full width */
+    height: auto; /* Adjust height automatically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding */
+    gap: 10px; /* Add gap between icon and text */
 }
 
 .modal-btn:hover {
-    background-color: #fff4a8;
-    color: #b2aa75;
+    background-color: #b2aa75;
+    color: #fff4a8;
     transform: scale(1.05);
 }
 
@@ -258,34 +264,16 @@ button:hover {
         margin-top: 20px;
     }
 
-    button {
-        padding: 10px 20px;
-        font-size: 0.9em;
-        min-width: 100px;
-    }
-
-    .modal-content {
-        width: 90%;
-        max-width: 300px;
-        padding: 20px;
-    }
-
-    .modal-content h2 {
-        font-size: 1.1em;
-    }
-
-    .modal-content h4 {
-        font-size: 0.85em;
-    }
-
-    .modal-img {
-        width: 70px;
-        height: 70px;
+    .botones button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.8em;
     }
 
     .modal-btn {
-        font-size: 0.9em;
-        padding: 8px 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.8em;
     }
 
     .close {
@@ -315,47 +303,16 @@ button:hover {
         margin-top: 15px;
     }
 
-    button {
-        padding: 8px 15px;
-        font-size: 0.85em;
-        min-width: 90px;
-    }
-
-    button:hover {
-        transform: scale(1.05);
-    }
-
-    .modal-content {
-        width: 95%;
-        max-width: 280px;
-        padding: 15px;
-    }
-
-    .modal-header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .modal-text {
-        width: 100%;
-    }
-
-    .modal-img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .modal-content h2 {
-        font-size: 1em;
-    }
-
-    .modal-content h4 {
-        font-size: 0.8em;
+    .botones button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.6em;
     }
 
     .modal-btn {
-        font-size: 0.85em;
-        padding: 8px 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.6em;
     }
 
     .modal-botones {
